@@ -77,7 +77,7 @@ should be logged in as ubuntu, execute "sudo adduser grader" to add user and mus
 - Create a catalog directory inside /var/www/ and change to catalog directory to clone the item catalog project by "sudo git clone https://github.com/AMBNRA/itemCataloge.git catalog".
 - Change to /var/www and run "sudo chown -R grader:grader catalog/" to change the ownership.
 - Run "/var/www/catalog/catalog.wsgi" to add the following:
-'''
+```
 activate_this = '/var/www/catalog/catalog/venv3/bin/activate_this.py'
 with open(activate_this) as file_:
     exec(file_.read(), dict(__file__=activate_this))
@@ -90,7 +90,7 @@ sys.path.insert(1, "/var/www/catalog/")
 
 from catalog import app as application
 application.secret_key = 'supersecretkey'
-'''
+```
 - Change to the /var/www/catalog/catalog and rename the project.py file to __init__.py by execute "mv project.py __init__.py".
 - Change "engine = create_engine("sqlite:///catalog.db")" from __init__.py, database_setup.py and lotsofitems by "engine = create_engine('postgresql://catalog:PASSWORD@localhost/catalog')".
 ### 14. Update path of client_secrets.json file
@@ -101,7 +101,7 @@ by "nano __init__.py" and update the path to "/var/www/catalog/catalog/client_se
 - Run ". venv3/bin/activate" to install this dependencies "pip install httplib2", "pip install requests", "pip install --upgrade oauth2client", "pip install sqlalchemy", "pip install flask", "sudo apt-get install libpq-dev" and "pip install psycopg2" after that run "deactivate" to deactivate the virtual environment.
 ### 16. Enable new a virtual host:
 - Execute "/etc/apache2/sites-available/catalog.conf" to add the following
-'''
+```
 <VirtualHost *:80>
     ServerName 18.184.114.153
     WSGIScriptAlias / /var/www/catalog/catalog.wsgi
@@ -117,7 +117,8 @@ by "nano __init__.py" and update the path to "/var/www/catalog/catalog/client_se
     ErrorLog ${APACHE_LOG_DIR}/error.log
     LogLevel warn
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>'''
+</VirtualHost>
+```
 to configure the virtual host.
 - Enable virtual host by "sudo a2ensite catalog" and run "sudo service apache2 reload" to reload Apache.
 ### 17. Restart Apache
