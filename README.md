@@ -2,7 +2,7 @@
 ## Project Description
 This project is a finally of the projects of the Udacity Full-Stack Web Developer Nanodegree Program.
 In this project take a baseline installation of a Linux server and prepare it to host a web applications, secure your server from a number of attack vectors, install and configure a database server, and deploy an existing web applications.
-[here](http://18.194.28.160.xip.io/) my a website.
+[here](http://18.184.114.153) my a website.
 
 ## Requirements to this project:
 - Database server [(PostgreSQL)](https://www.postgresql.org/).
@@ -125,7 +125,7 @@ to configure the virtual host.
 - Run "sudo service apache2 restar" to restart apache.
 
 ## Can visit my website:
-[(Visit)](http://18.184.114.153.xip.io/) or http://http://18.184.114.153.xip.io/
+[(Visit)](http://18.184.114.153) or http://18.184.114.153
 
 ## References
 [(Deploying to Linux Servers)](https://classroom.udacity.com/nanodegrees/nd004-connect/parts/226fb92a-d5dc-4d10-add0-c1dabff6ee69).
