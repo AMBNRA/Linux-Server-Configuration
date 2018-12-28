@@ -125,7 +125,7 @@ to configure the virtual host.
 - Run "sudo service apache2 restar" to restart apache.
 
 ## Can visit my website:
-[(Visit)](http://http://18.184.114.153.xip.io/) or http://http://18.184.114.153.xip.io/
+[(Visit)](http://18.184.114.153.xip.io/) or http://http://18.184.114.153.xip.io/
 
 ## References
 [(Deploying to Linux Servers)](https://classroom.udacity.com/nanodegrees/nd004-connect/parts/226fb92a-d5dc-4d10-add0-c1dabff6ee69).
