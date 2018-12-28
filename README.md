@@ -1,8 +1,10 @@
 # Linux Server Configuration
 ## Project Description
 This project is a finally of the projects of the Udacity Full-Stack Web Developer Nanodegree Program.
+
 In this project take a baseline installation of a Linux server and prepare it to host a web applications, secure your server from a number of attack vectors, install and configure a database server, and deploy an existing web applications.
-[here](http://18.184.114.153) my a website.
+
+[Here](http://18.184.114.153) my a website.
 
 ## Requirements to this project:
 - Database server [(PostgreSQL)](https://www.postgresql.org/).
